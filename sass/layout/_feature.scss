@@ -1,0 +1,34 @@
+.feature {
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  &__list-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__title {
+    margin-top: 30px;
+
+    @include font(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 10px;
+
+    @include font(400, 14px, 24px, 0.03em);
+    color: var(--secondary-text-color);
+  }
+
+  &__icon-box {
+    @extend %alignFlex;
+    height: 120px;
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+  }
+}

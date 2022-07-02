@@ -1,0 +1,6 @@
+.container {
+  width: 1200px;
+  @extend %marginAuto;  
+  padding-left: 15px;
+  padding-right: 15px;
+}

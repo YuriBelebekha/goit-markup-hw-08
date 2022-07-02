@@ -1,0 +1,24 @@
+.contact-list {
+  margin-top: 20px;
+  padding-right: 22px;
+
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &__link {
+    @include font(400, 14px, 24px, 0.03em);
+    font-style: normal;
+    color: var(--opacity-text-color);
+    transition: color var(--duration) var(--timing-function);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__link-opacity {
+    color: var(--primary-white-color);
+  }
+}
