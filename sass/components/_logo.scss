@@ -1,19 +1,33 @@
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 94px;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;  
 
   font-family: var(--main-logo-font-family);
-  // 0.1px застосовується, щоб уникнути помилки при компіляції в CSS (помилка виникає в функції font при діленні на 0)
   @include font(700, 0.1px, 0.1px, 0);  
   color: var(--logo-black-color);
-
-  //використовується для боротьби з пробілом, який виникає між двома span в логотипі
+  
   &__font-size {
-    @include font(inherit, 26px, 31px, 0.03em);    
+    @include font(inherit, 26px, 30px, 0.03em);    
   }
 
   &__accent-color {
     color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }  
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    margin-right: 94px;
   }
 }

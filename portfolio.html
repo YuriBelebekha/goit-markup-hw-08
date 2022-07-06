@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header-container">
+			<div class="container header__container">
 				<nav class="menu-nav">
 					<a class="logo link" href="./index.html" lang="en">
 						<span class="logo__font-size logo__accent-color">Web</span>
@@ -61,6 +61,96 @@
 						</a>
 					</li>
 				</ul>
+
+				<button class="mobile-menu-btn" type="button" data-menu-open>
+					<svg class="mobile-menu-btn__icon" width="40" height="40">
+						<use href="./images/sprite.svg#mobile-menu-burger"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu__container">
+					<div class="mobile-menu__wrapper-inner">
+						<button class="mobile-menu-btn mobile-menu-btn__close" type="button" data-menu-close>
+							<svg class="mobile-menu-btn__icon" width="40" height="40">
+								<use href="./images/sprite.svg#mobile-menu-cross"></use>
+							</svg>
+						</button>
+
+						<nav class="mobile-menu__nav">
+							<ul class="mobile-menu__nav-list list">
+								<li class="mobile-menu__nav-item">
+									<a class="mobile-menu__nav-link link" href="./index.html">Студия</a>
+								</li>
+
+								<li class="mobile-menu__nav-item">
+									<a class="mobile-menu__nav-link link current" href="./portfolio.html">Портфолио</a>
+								</li>
+
+								<li class="mobile-menu__nav-item">
+									<a class="mobile-menu__nav-link link" href="">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="mobile-menu__wrapper-inner">
+						<ul class="mobile-menu__contact-list list">
+							<li class="mobile-menu__contact-item">
+								<a class="mobile-menu__contact-link link mobile-menu__contact-link--accent" href="tel:+380961111111">
+									+38 096 111 11 11
+								</a>
+							</li>
+
+							<li class="mobile-menu__contact-item">
+								<a class="mobile-menu__contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+
+						<ul class="mobile-menu__social-media-list list">
+							<li class="mobile-menu__social-media-item">
+								<a
+									class="mobile-menu__social-media-link link"
+									href="https://www.instagram.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Instagram
+								</a>
+							</li>
+							<li class="mobile-menu__social-media-item">
+								<a
+									class="mobile-menu__social-media-link link"
+									href="https://twitter.com"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Twitter
+								</a>
+							</li>
+							<li class="mobile-menu__social-media-item">
+								<a
+									class="mobile-menu__social-media-link link"
+									href="https://www.facebook.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Facebook
+								</a>
+							</li>
+							<li class="mobile-menu__social-media-item">
+								<a
+									class="mobile-menu__social-media-link link"
+									href="https://www.linkedin.com/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									LinkedIn
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -411,5 +501,7 @@
 				</form>
 			</div>
 		</footer>
+
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
