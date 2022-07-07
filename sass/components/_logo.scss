@@ -1,3 +1,5 @@
+// MOBILE version
+
 .logo {
   display: inline-block;
   padding-top: 16px;
@@ -16,6 +18,8 @@
   }
 }
 
+// TABLET version
+
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
@@ -24,10 +28,12 @@
   }  
 }
 
+// DESKTOP version
+
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-right: 94px;
   }
 }
