@@ -474,6 +474,9 @@ body {
     color: var(--accent-color);
   }
 
+  .mobile-menu__contact-item:first-child {
+    margin-top: 72px;
+  }
   .mobile-menu__contact-item:not(:first-child) {
     margin-top: 32px;
   }

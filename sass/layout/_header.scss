@@ -86,7 +86,12 @@
     }
   }
 
-  .mobile-menu__contact {
+  .mobile-menu__contact {    
+    // додав спеціально margin-top, щоб номер телефону не злипався з navmenu в деяких випадках
+    &-item:first-child {
+      margin-top: 72px;
+    }
+    
     &-item:not(:first-child) {
       margin-top: 32px;      
     }    
@@ -274,89 +279,3 @@
     }
   }
 }
-
-
-
-// .menu-nav {
-//   display: flex;
-//   align-items: center;
-
-//   &__list {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   &__item:not(:first-child) {
-//     margin-left: 50px;
-//   }
-
-//   &__link {
-//     position: relative;
-
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-
-//     @include font(500, 14px, 16px, 0.02em);
-//     color: var(--primary-text-color);
-
-//     transition: color var(--duration) var(--timing-function);
-
-//     &.current,
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-
-//     &::after {
-//       content: '';
-
-//       position: absolute;
-//       bottom: 0;
-
-//       display: block;
-//       width: 100%;
-//       height: 4px;
-
-//       background-color: var(--accent-color);
-//       border-radius: 2px;
-//       transform: scaleX(0);
-//       transition: transform var(--duration) var(--timing-function);
-//     }
-
-//     &.current:after,
-//     &:hover::after,
-//     &:focus::after {
-//       transform: scaleX(1);
-//     }
-//   }
-// }
-
-// .menu-contact {
-//   display: flex;
-
-//   &__item:not(:first-child) {
-//     margin-left: 50px;
-//   }
-
-//   &__link {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-
-//     @include font(500, 14px, 16px, 0.02em);
-//     color: var(--secondary-text-color);
-
-//     transition: color var(--duration) var(--timing-function);
-
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-
-//   &__icon {
-//     margin-right: 10px;
-//     fill: currentColor;
-//   }
-// }

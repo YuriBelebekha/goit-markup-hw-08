@@ -5,11 +5,12 @@
 
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
 
   background-color: var(--backdrop-bg-color);
   transform: scale(1) rotate(360deg);
   transition: transform var(--duration) var(--timing-function),
-    visibility var(--duration) var(--timing-function);
+             visibility var(--duration) var(--timing-function);
 
     &.is-hidden {
       transform: scale(0) rotate(0deg);
