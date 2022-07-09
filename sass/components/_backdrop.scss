@@ -4,7 +4,7 @@
   left: 0;
 
   width: 100vw;
-  height: 100vh;
+  height: 100vh;  
   overflow-y: scroll;
 
   background-color: var(--backdrop-bg-color);
@@ -17,4 +17,10 @@
       visibility: hidden;
       pointer-events: none;
     }
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
 }
