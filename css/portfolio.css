@@ -924,7 +924,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .social-list__item {
@@ -956,6 +956,11 @@ body {
   fill: var(--primary-white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-bottom: 30px;
+  }
+}
 .contact-list {
   margin-top: 20px;
   padding-right: 22px;

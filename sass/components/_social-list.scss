@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .social-list__item {
@@ -36,5 +36,11 @@
   .social-list__link:hover &,
   .social-list__link:focus & {
     fill: var(--primary-white-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-bottom: 30px;
   }
 }
