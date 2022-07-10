@@ -1,6 +1,5 @@
 .contact-list {
-  margin-top: 20px;
-  padding-right: 22px;
+  margin-top: 20px;  
 
   &__item:not(:first-child) {
     margin-top: 9px;
@@ -20,5 +19,13 @@
 
   &__link-opacity {
     color: var(--primary-white-color);
+  }
+}
+
+// screen 1200px+
+
+@media screen and (min-width: 1200px) {
+  .contact-list {    
+    padding-right: 22px;
   }
 }
